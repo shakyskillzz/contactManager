@@ -1,0 +1,317 @@
+html, body {
+    font-family: American Typewriter, serif;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url('../images/background_body.jpg');
+    background-color: #f6eee0;
+}
+
+/* Header styling */
+header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #e4b7a0;
+    border-bottom: 2px solid #a45c40;
+    align-items: center;
+    text-align: center;
+}
+
+h1 {
+    font-family: American Typewriter, serif;
+    /*color: #a45c40;*/
+    margin: 0;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+}
+
+h2{
+    color: #a45c40;
+    margin: 0;
+    text-align: center;
+
+}
+
+/* Footer Styling */
+footer {
+    background-color: #e4b7a0;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    border-top: 2px solid #A45C40;
+    font-family: American Typewriter, serif;
+    font-size: 18px;
+}
+
+/* Container for the columns */
+.container_index {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top of the flex container */
+    padding-top: 15vh; /* Add some padding at the top to push content down slightly */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the top of the flex container */
+    padding-bottom: 5x; /* Optional: Add bottom padding if needed */
+    margin-bottom: 20px; /* Add space between container divs */
+}
+}
+
+/* Styling for each column */
+.column {
+
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.side_index {
+    width: 10%;
+}
+
+.side {
+    width: 20%;
+}
+
+.login {
+    font-size: 20px;
+    color: #A45C40;
+    width: 35%;
+    text-align: center;
+    padding: 10px;
+    border-right: 1px solid black; /* Adds vertical line on the right */
+    background-color: #f6eee0;
+    border-radius: 15px;
+    border: 3px solid #e4b7a0;
+}
+
+
+.signUp {
+    font-size: 20px;
+    color: #A45C40;
+    width: 35%;
+    text-align: center;
+    padding: 10px;
+    background-color: #f6eee0;
+    border-radius: 15px;
+    border: 3px solid #e4b7a0;
+}
+
+.main {
+    font-size: 20px;
+    color: #A45C40;
+    width: 50%;
+    text-align: center;
+    background-color: #f6eee0;
+    border-radius: 15px;
+    border: 3px solid #e4b7a0;
+}
+
+#contacts_body
+{
+    flex: 1;
+    justify-content: space-around;
+    font-size: 0px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/* username and password criteria message */
+#explanation,
+#explanationUser {
+    display: none;
+    color: #A45C40;
+    position: relative;
+    bottom: 1px;
+    text-align: center;
+    font-family:  American Typewriter, serif;
+}
+
+#loginName
+{
+    font-size: 15px;
+}
+#loginPassword
+{
+    font-size: 15px;
+}
+
+#firstName
+{
+    font-size: 15px;
+}
+#lastName
+{
+    font-size: 15px;
+}
+
+#userName
+{
+    font-size: 15px;
+}
+#password
+{
+    font-size: 15px;
+}
+
+#searchText
+{
+    font-size: 15px;
+}
+
+#contactName
+{
+    font-size: 15px;
+}
+
+#telephone
+{
+    font-size: 15px;
+}
+
+#email
+{
+    font-size: 15px;
+}
+
+#inner-title{
+    display: inline-table;
+    font-size: 1.3em;
+    width: 40%;
+    text-align: center;
+    font-family: American Typewriter, serif;
+    color: #c38370;
+}
+
+.buttons
+{
+    font-size: 20px;
+    border-radius: 25px;
+    width: 25%;
+    font-family: American Typewriter, serif;
+    background-color: white;
+    color: #a45c40;
+}
+
+.buttons:hover{
+    background-color: #c38370;
+    color: #FFFFFF;
+    opacity: 50%;
+}
+
+.buttons_logout
+{
+    font-size: 15px;
+    border-radius: 25px;
+    width: 20%;
+    align-items: right;
+    font-family: American Typewriter, serif;
+    border-radius: 12px;
+    color: #F6EEE0;
+    background-color: #A45C40;
+}
+
+.buttons_logout:hover{
+    background-color: #C38370;
+    color: #FFFFFF;
+    opacity: 50%;
+}
+
+.button_edit{
+    background-image: url('../images/edit-icon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 75px;
+    height: 75px;
+}
+
+.button_delete{
+    background-image: url('../images/delete-icon.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 75px;
+}
+
+.button_cancel{
+    font-size: 20px;
+    border-radius: 25px;
+    width: 25%;
+    font-family: American Typewriter, serif;
+    background-color: #FF0000;
+    color: white;
+}
+
+.button_cancel:hover{
+    font-size: 20px;
+    border-radius: 25px;
+    width: 25%;
+    font-family: American Typewriter, serif;
+    background-color: white;
+    color: black;
+}
+
+#contactSearchResult{
+    display: inline-block;
+    font-size: 0.8em;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-family: American Typewriter, serif;
+    color: #A45C40;
+}
+
+#contactList{
+
+
+}
+
+select{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 2%;
+    font-size: 0.75em;
+    font-family: American Typewriter, serif;
+}
+
+#contactAddResult{
+    display: inline-block;
+    font-size: 0.8em;
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 1%;
+    font-family: American Typewriter, serif;
+    color: #A45C40;
+}
+
+#loginResult{
+    display: inline-block;
+    font-size: 0.8em;
+    width: 50%;
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    font-family: American Typewriter, serif;
+    color: #FF0000;
+}
+
+input[type="text"],input[type="password"]{
+    border-radius: 6px;
+    text-align: left;
+    width: 40%;
+    font-family: American Typewriter, serif;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
