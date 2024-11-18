@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>COP4331 Group 11 - Contacts Repository</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="js/code.js"></script>
+    <link href="css/styles.css" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() 
+        {
+            readCookie();
+        }, false);
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Welcome To Your Contact Repository</h1>
+        <span id="userName"></span><br>
+        <center><button type="button" id="logoutButton" class="buttons_logout" onclick="doLogout();"> Log Out </button></center>
+    </header>
+
+    <div id="contacts_body">
+        <br>
+
+<!-------------Add to contacts section------------->
+        <div class="container">
+            <div class="side"></div>
+            
+
+            <div class="column main">
+
+                <form id="form">
+                Name: <input  type="text" id="contactName" placeholder="Contacts Name"><br>
+                Phone: <input type="text" id="phone" placeholder="Contacts Phone" pattern="^[0-9]{9}$" ><br>
+                Email: <input type="text" id="email" placeholder="Contacts email" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" >
+                <br><button type="button" id="addContactButton" class="buttons" onclick="addContact();"> Add Contact </button><br>
+                <form id="form">
+                <span id="contactAddResult"></span>
+            </div>
+            <div class="side"></div>
+        </div>
+
+<!-------------search contacts section------------->
+        <div class="container">
+            <div class="side"></div>
+            <div class="column main">
+                <span id="inner-title">Search Contacts:</span><br>
+                Search: <input type="text" id="searchText" placeholder="Contact To Search For"/ required>
+                <br><button type="button" id="searchContactButton" class="buttons" onclick="searchContacts();"> Search </button><br>
+                <span id="contactSearchResult"></span>
+            </div>
+            <div class="side"></div>
+        </div>
+
+<!-------------Edit contacts section (hidden)------------->
+        <div class="container">
+            <div id="editContactForm" class="column main" style="display: none; padding-bottom: 10px; padding-top: 10px;">
+                <span id="inner-title">Edit Contact:</span><br>
+                <input type="hidden" id="editContactId" />
+                <label>Name:</label>
+                <input type="text" id="editContactName" /><br>
+                <label>Phone:</label>
+                <input type="text" id="editContactPhone" /><br>
+                <label>Email:</label>
+                <input type="text" id="editContactEmail" /><br>
+                <button type="button" class="buttons" onclick="updateContact()">Update Contact</button>
+                <button type="button" class="button_cancel" onclick="document.getElementById('editContactForm').style.display = 'none';">Cancel</button><br>
+                <span id="editResults"></span>
+            </div>
+        </div>
+
+<!-------------Search Results------------->
+        <div class="container" >
+            <div class="side"></div>
+            <div class="column main" id="searchDiv" style="display: none;">
+                <p id="contactList">
+                </p><br><br>
+            </div>
+            <div class="side"></div>
+        </div>
+    </div>
+
+<!-------------Footer Section --------------->
+    <footer>
+        2024 COP4331 Group 11
+    </footer>
+</body>
+</html>
